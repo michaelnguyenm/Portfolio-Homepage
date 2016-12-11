@@ -1,11 +1,17 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Michael Nguyen - Homepage</title>
+        <!-- Stylesheets (Bootstrap) -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/offcanvas.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
+        <!-- Angular, ui-router, js files -->
+        <script src="https://code.angularjs.org/1.6.0/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+        <script src="js/app.js"></script>
     </head>
-    <body>
+    <body ng-app="routerApp">
         <!-- Navigation bar -->
         <nav class="navbar navbar-fixed-top navbar-inverse">
             <div class="container">
@@ -18,108 +24,27 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand" href="#">Michael Nguyen</a>
+                    <a class="navbar-brand" ui-sref="home">Michael Nguyen</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse pull-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a ui-sref="home">Home</a></li>
+                        <li><a ui-sref="projects">Projects</a></li>
+                        <li><a ui-sref="contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Face + Social Media -->
-        <header>
-            <div class="jumbotron">
-                <div class="container">
-                    <img class="img-circle img-resonsive" src="img/face.jpg" alt="My face!">
-                    <h2>Michael Nguyen</h2>
-                    <a href="https://blog.michaelmnguyen.me/">Link to my blog with other professional profile links</a>
-                    <!-- Github, Linkedin, Wordpress, Flickr -->
-                    <br>
-                    Website currently under construction.
-                </div>
-            </div>
-        </header>
-        <!-- CV -->
+        <!-- Body -->
+        <div ui-view></div>
+        <!-- Footer -->
         <div class="container">
-            <div class="row">
-                <h2>Education</h2>
-                <div class="col-md-4">
-                    <h3>University of Texas at Austin</h3>
-                </div>
-                <div class="col-md-8">
-                    <h4>Bachelor of Science and Arts in Computer Science</h4>
-                    <p>Aug 2013 - Dec 2017</p>
-                    <p>List of relevant courses can be found below.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Sophia University</h3>
-                </div>
-                <div class="col-md-8">
-                    <h4>Minor in Japanese</h4>
-                    <p>Apr 2016 - Jul 2016</p>
-                    <p>Completed minor in Japanese while studying abroad.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <h2>Classes</h2>
-                <div class="col-md-4">
-                    <h3>Data Structures</h3>
-                    <p>Implemented data structures such as linked list, set, and binary search tree in Java 7. Also completed a project in which I used Huffman coding to compress a file.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Computer Organization and Architecture</h3>
-                    <p>Implemented a basic compiler in C for arithmetic and used GDB for debugging.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Object Oriented Programming</h3>
-                    <p>Created a basic algorithm which parses Netflix anonymized data and makes recommendations and also implemented a memory allocator in C++. Used tools such as Github, Travis-CI, Docker, and Google Test.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Operating Systems <small>(Present)</small></h3>
-                    <p>Currently registered for the semester of Spring 2017. Implement PintOS.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Mobile Computing <small>(Present)</small></h3>
-                    <p>Currently registered for the semester of Spring 2017. Application development for Android.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <h2>Personal Projects</h2>
-                <div class="col-md-4">
-                    <h3>Test</h3>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <h2>Tools</h2>
-                <div class="col-md-4">
-                    <h3>Github</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3>Travis-CI</h3>
-                </div>
-                <div class="col-md-4">
-                    <h3>Docker</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Google Test</h3>
-                </div>
-            </div>
             <hr>
             <a href="https://www.getbootstrap.com/">Powered by Bootstrap</a> - Website created by Michael Nguyen
             <br>
             <br>
         </div>
-        <!-- scripts -->
+        <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
         <script src="js/bootstrap.min.js">
         <script src="js/offcanvas.js">
