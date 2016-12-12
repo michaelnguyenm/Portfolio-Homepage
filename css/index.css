@@ -6,6 +6,12 @@
     border-radius: %50;
 }
 
+.img-social {
+    height: 75px;
+    width: 75px;
+    padding: 5px;
+}
+
 header {
     margin-top: -20px;
     text-align: center;
