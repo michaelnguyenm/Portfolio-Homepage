@@ -7,16 +7,16 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
         .state('home', {
-            url: '',
+            url: '/',
             templateUrl: 'home.html'
         })
 
         .state('projects', {
-            url: 'projects',
+            url: '/projects',
             templateUrl: 'projects.html'
         })
 
-        .state('contact', {
+        .state('/contact', {
             // Nothing
         });
 });
