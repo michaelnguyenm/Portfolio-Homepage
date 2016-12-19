@@ -17,6 +17,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         })
 
         .state('/contact', {
-            // Nothing
+            url: '/contact',
+            templateUrl: 'contact.html'
         });
 });
