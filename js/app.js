@@ -16,7 +16,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'projects.html'
         })
 
-        .state('/contact', {
+        .state('contact', {
             url: '/contact',
             templateUrl: 'contact.html'
         });
