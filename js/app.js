@@ -18,6 +18,15 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
 
         .state('contact', {
             url: '/contact',
-            templateUrl: 'contact.html'
+            templateUrl: 'contact.html',
+            controller: function($scope) {
+                // Obfuscation for fun
+                $scope.host = "moc.liamg";
+                $scope.user = "mneyugnleahcim";
+                $scope.at = "@";
+                // Based on http://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/
+                function rev(x) { return x.split('').reverse().join(''); }
+                $scope.mr = rev($scope.host + $scope.at + $scope.user);
+            }
         });
 });
