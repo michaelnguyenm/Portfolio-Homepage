@@ -29,6 +29,4 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 $scope.mr = rev($scope.host + $scope.at + $scope.user);
             }
         });
-
-    $locationProvider.html5Mode(true);
 });
