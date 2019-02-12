@@ -4,11 +4,18 @@
         <div class="container-fluid">
             <img class="img-circle img-resonsive" src="img/face.jpg" alt="My face!"/>
             <h2>Michael Nguyen</h2>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                I am a software engineer with experience building native Android applications as well as desktop applications using Java Swing and Windows Presentation Foundation at a small startup comprised of four people. As such, I am often given the creative liberty to choose the best tools for the job and learn how to use them in short periods of time to meet deadlines. I am hoping to bring this experience and flexibility to a larger company with larger customer-facing applications and eventually grow to become a mentor for other engineers.
+            </div>
+            <div class="col-md-3"></div>
             <!-- Github, Linkedin, Wordpress, Flickr -->
-            <a href="https://github.com/michaelnguyenm/"><img class="img-social" src="img/github.png"/></a>
-            <a href="https://www.linkedin.com/in/michael-nguyen-718201b6"><img class="img-social" src="img/linkedin.png"/></a>
-            <!--<a href="https://blog.michaelmnguyen.me/"><img class="img-social" src="img/wordpress.png"/></a>-->
-            <a href="https://www.flickr.com/photos/40771660@N07/"><img class="img-social" src="img/flickr.png"/></a>
+            <div class="col-md-12">
+                <a href="https://github.com/michaelnguyenm/"><img class="img-social" src="img/github.png"/></a>
+                <a href="https://www.linkedin.com/in/michael-nguyen-718201b6"><img class="img-social" src="img/linkedin.png"/></a>
+                <!--<a href="https://blog.michaelmnguyen.me/"><img class="img-social" src="img/wordpress.png"/></a>-->
+                <a href="https://www.flickr.com/photos/40771660@N07/"><img class="img-social" src="img/flickr.png"/></a>
+            </div>
         </div>
     </div>
 </header>
@@ -17,17 +24,17 @@
     <!-- Education -->
     <div class="row">
         <h2>Education</h2>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h3>University of Texas at Austin</h3>
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-8">
             <h4>Bachelor of Science and Arts in Computer Science</h4>
             <p>Aug 2013 - Dec 2017</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h3>Sophia University / 上智大学</h3>
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-8">
             <h4>Minor in Japanese</h4>
             <p>Apr 2016 - Jul 2016</p>
             <p>Completed minor in Japanese while studying abroad.</p>
@@ -37,12 +44,18 @@
     <!-- Work Experience -->
     <div class="row">
         <h2>Work Experience</h2>
-        <div class="col-sm-4">
-            <h3>Hauoli LLC</h3>
+        <div class="col-md-4">
+            <a href="https://hauoli.co/"><h3>Hauoli LLC</h3></a>
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-8">
             <h4>Software Engineer <small>Aug 2017 - Present</small></h4>
             <ul>
+              <li>
+                Enhanced Hauoli's motion tracking application for android with network discovery and automatic audio level control to ensure that the application easily connects to the host computer/game and that the quality of the tracking is maintained at all distances, removing potential barriers for the end user.
+              </li>
+              <li>
+                Created tools from the ground up in Java Swing and Windows Presentation Foundation to allow the user to test Hauoli's motion tracking technology for PC games. The tools feature automated switching for 2D and 3D tracking cases, network discovery, mouse control with sensitivity adjustment, and debugging information.
+              </li>
               <li>
                 Developed a Unity SDK for developers to use audio-based motion tracking data from Android and iOS devices, and created several tech demos which were presented at Consumer Electronics Show 2018 and several investor meetings.
               </li>
@@ -52,18 +65,13 @@
               <li>
                 Designed a gesture-based control scheme using the <a href="http://depts.washington.edu/madlab/proj/dollar/index.html">$1 Unistroke Recognizer</a> and Hauoli's tracking data for a music player application that can be implemented into smart speaker systems.
               </li>
-              <li>
-                Created developer and end user tools in Java Swing and Windows Presentation Foundation to allow the user to test Hauoli's motion tracking technology for PC games. The tools feature automated switching for 2D and 3D tracking cases, network discovery, mouse control with sensitivity adjustment, and debugging information.
-              </li>
-              <li>
-                Implemented enhancements such as network discovery and automatic audio level control into the Android motion tracking application to ensure that the application easily connects to the host computer/game and that the quality of the tracking is maintained at all distances.
-              </li>
             </ul>
         </div>
-        <div class="col-sm-4">
+        <!--
+        <div class="col-md-4">
             <h3>Universty of Texas at Austin</h3>
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-8">
           <h4>Undergraduate Teaching Assistant <small>Jun 2017 - Aug 2017</small></h4>
           <ul>
             <li>
@@ -77,37 +85,38 @@
             </li>
           </ul>
         </div>
+        -->
     </div>
     <hr>
     <!-- Coursework -->
     <!--
     <div class="row">
         <h2>Coursework</h2>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h3>Data Structures</h3>
             <p>Implemented data structures such as linked list, set, binary search tree, and priority queue which was used in a Huffman coding assignment to compress a file in Java.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h3>Object Oriented Programming</h3>
             <p>Created a basic algorithm which parses Netflix anonymized data and makes recommendations and also implemented a memory allocator in C++. Used tools such as Github, Travis-CI, Docker, and Google Test.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h3>Operating Systems</h3>
             <p>Developed a mini shell which forks, executes, and reaps foreground and background child processes in C. Added process, virtual memory, and file system abstractions on top of preexisting toy OS code during the semester.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h3>Mobile Computing</h3>
             <p>Application development for Android in Java. Developed a puzzle game with a team of two other people over the course of ten weeks.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h3>Software Design</h3>
             <p>Applied design concepts through the use of UML models. Created refactoring scripts and common design patterns such as the visitor pattern.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h3>Big Data Programming</h3>
             <p>Used tools such as Hadoop and Spark with Java to organize data into partitions or bins and filter data during the semester. Computed statistics such as mean and standard deviation on provided datasets.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <h3>Introduction to Computer Security</h3>
             <p>Encoded and decoded messages into images at a bit level, created a password cracker based on common substitutions and transformations, and implemented AES-128 in Java.</p>
         </div>
@@ -117,14 +126,14 @@
     <!-- Tools -->
     <div class="row">
         <h2>Skills</h2>
-        <div class="col-sm-6">
+        <div class="col-md-6">
             <h3>Tools</h3>
             <ul>
                 <li>Github</li>
-                <li>Travis-CI</li>
-                <li>Docker</li>
                 <li>Android Studio</li>
                 <li>Unity</li>
+                <li>Travis-CI</li>
+                <li>Docker</li>
             </ul>
             <h3>Testing Frameworks</h3>
             <ul>
@@ -132,8 +141,8 @@
                 <li>UnitTest Python</li>
             </ul:>
         </div>
-        <div class="col-sm-6">
-            <h3>Programming Languages</h3>
+        <div class="col-md-6">
+            <h3>Programming</h3>
             <ul>
                 <li>Java</li>
                 <li>C</li>
