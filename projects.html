@@ -1,9 +1,9 @@
 <div class="container">
-    <div class="row">
-        <h1>Projects</h1>
-    </div>
-    <div class="row">
-        <!--
+  <div class="row">
+    <h1>Projects</h1>
+  </div>
+  <div class="row">
+    <!--
       <div class="col-md-12">
           <h3>Fence Puzzle Game <small><a href="https://github.com/michaelnguyenm/FencePuzzle">Github</a></small></h3>
           <h4>Course: Mobile Computing (Android) <small>Spring 2017</small></h4>
@@ -24,37 +24,144 @@
       </div>
       <hr>
       -->
-      <div class="col-md-12">
-          <h3>J-Pop Viewer <small><a href="https://github.com/michaelnguyenm/seasonal-jpop-app">Github</a> | <a href="http://ec2-52-25-78-67.us-west-2.compute.amazonaws.com">Website</a></small></h3>
-          <h4>Typescript/MEAN stack</h4>
-          <p>
-              The goal for this project was to provide a service for which people could easily find related music for their favorite shows in an automated way. Prior to making the app, I found that someone was manually finding all of this information and eventually stopped updating his website as it was too much work for the owner to do regularly. The project, although incomplete, demonstrates the use of asynchronous operations and pipes with Angular and took over the course of two weeks to learn and implement.
-          </p>
-          <p>
-            Key details:
-          </p>
-          <ul>
-            <li>Built on top of a MEAN stack (Angular 4) and Bootstrap.</li>
-            <li>Front-end displays release dates for albums and related links for a given television airing season.</li>
-            <li>Created a RESTful API to access information from MongoDB.</li>
-          </ul>
-      </div>
-      <hr>
-      <div class="col-md-12">
-          <h3>J-Pop Data Scraper <small><a href="https://github.com/michaelnguyenm/seasonal_jpop_scraper">Github</a></small></h3>
-          <h4>Python 3</h4>
-          <p>
-              As a requirement for the J-Pop Viewer app, I needed to pull data from various sources on the internet in an automated manner. In some cases, I was able to find a regularly updated database with a readily available API, but in other cases, I was forced to scrape data using the library, Beautiful Soup. This project took approximately a week while learning tools I had never used before.
-          </p>
-          <p>
-            Key details:
-          </p>
-          <ul>
-            <li>Scraped data from <a href="https://livechart.me">livechart.me</a> for TV info and parsed it using Beautiful Soup.</li>
-            <li>Used <a href="https://wiki.anidb.net/w/HTTP_API_Definition">anidb's HTTP API</a> to retrieve airing dates and <a href="http://vgmdb.info/">vgmdb's API</a> for music info.</li>
-            <li>Developed using Python 3 and stores scraped and parsed data inside MongoDB.</li>
-            <li>Testing performed with UnitTest/Travis-CI and can be deployed with Docker.</li>
-          </ul>
-      </div>
+    <div class="col-md-12">
+      <h3>
+        Virtual Youtuber Stars
+        <small
+          ><a href="https://app.michaelmnguyen.me/">Website</a>
+          |
+          <a href="https://api.michaelmnguyen.me/api/">API</a></small
+        >
+      </h3>
+      <h4>React.js(ES6+)/Express.js/Node.js/Postgres/Apache/Docker</h4>
+      <p>
+        The goal for this project was to provide a way for people to get the
+        most recent translationed video clips off of Youtube for their favorite
+        "Virtual Youtubers" with filtering and sharing features. Additionally,
+        the clips are linked to their original sources if the translator
+        provided that information in the description of their clip. This
+        application was actively built on a daily basis for over 2 months and
+        has had periodic updates after that.
+      </p>
+      <p>
+        Key details:
+      </p>
+      <ul>
+        <li>
+          Built with React.js (EMCAScript 6+) and
+          <a href="https://material-ui.com/">Material-UI</a> for the front-end.
+          The interface is responsive across mobile and desktop devices and
+          features a single-page app with infinite scrolling.
+        </li>
+        <li>
+          The data relationship is many-to-many between the translated clips and
+          sources and uses a separate junction table to map this relationship.
+        </li>
+        <li>
+          Created a RESTful API with Express.js to access information from the
+          Postgres database. There are several routes:
+          <a href="https://api.michaelmnguyen.me/api/channels">channels</a>,
+          <a href="https://api.michaelmnguyen.me/api/videos">videos</a>,
+          <a href="https://api.michaelmnguyen.me/api/video-to-videos"
+            >video-to-videos</a
+          >
+        </li>
+        <li>
+          A script is used daily with a cronjob to populate the database with
+          more videos using Sequelize and the Youtube API.
+        </li>
+        <li>
+          Apache is used to handle the routing with reverse proxies for the app,
+          API, and this portfolio website.
+        </li>
+        <li>
+          The entire full-stack is deployed on Linode using Docker Hub. The
+          repositories can be seen
+          <a href="https://hub.docker.com/u/michaelnguyenm">here</a>.
+        </li>
+      </ul>
     </div>
+    <hr />
+    <div class="col-md-12">
+      <h3>
+        J-Pop Viewer
+        <small
+          ><a href="https://github.com/michaelnguyenm/seasonal-jpop-app"
+            >Github</a
+          >
+          |
+          <a href="http://ec2-52-25-78-67.us-west-2.compute.amazonaws.com"
+            >Website</a
+          ></small
+        >
+      </h3>
+      <h4>Typescript/MEAN stack</h4>
+      <p>
+        The goal for this project was to provide a service for which people
+        could easily find related music for their favorite shows in an automated
+        way. Prior to making the app, I found that someone was manually finding
+        all of this information and eventually stopped updating his website as
+        it was too much work for the owner to do regularly. The project,
+        although incomplete, demonstrates the use of asynchronous operations and
+        pipes with Angular and took over the course of two weeks to learn and
+        implement.
+      </p>
+      <p>
+        Key details:
+      </p>
+      <ul>
+        <li>Built on top of a MEAN stack (Angular 4) and Bootstrap.</li>
+        <li>
+          Front-end displays release dates for albums and related links for a
+          given television airing season.
+        </li>
+        <li>Created a RESTful API to access information from MongoDB.</li>
+      </ul>
+    </div>
+    <hr />
+    <div class="col-md-12">
+      <h3>
+        J-Pop Data Scraper
+        <small
+          ><a href="https://github.com/michaelnguyenm/seasonal_jpop_scraper"
+            >Github</a
+          ></small
+        >
+      </h3>
+      <h4>Python 3</h4>
+      <p>
+        As a requirement for the J-Pop Viewer app, I needed to pull data from
+        various sources on the internet in an automated manner. In some cases, I
+        was able to find a regularly updated database with a readily available
+        API, but in other cases, I was forced to scrape data using the library,
+        Beautiful Soup. This project took approximately a week while learning
+        tools I had never used before.
+      </p>
+      <p>
+        Key details:
+      </p>
+      <ul>
+        <li>
+          Scraped data from <a href="https://livechart.me">livechart.me</a> for
+          TV info and parsed it using Beautiful Soup.
+        </li>
+        <li>
+          Used
+          <a href="https://wiki.anidb.net/w/HTTP_API_Definition"
+            >anidb's HTTP API</a
+          >
+          to retrieve airing dates and
+          <a href="http://vgmdb.info/">vgmdb's API</a> for music info.
+        </li>
+        <li>
+          Developed using Python 3 and stores scraped and parsed data inside
+          MongoDB.
+        </li>
+        <li>
+          Testing performed with UnitTest/Travis-CI and can be deployed with
+          Docker.
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
