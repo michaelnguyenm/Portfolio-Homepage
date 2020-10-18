@@ -36,12 +36,12 @@
       <h4>React.js(ES6+)/Express.js/Node.js/Postgres/Redis/Apache/Docker</h4>
       <p>
         The goal for this project was to provide a way for people to get the
-        most recent translationed video clips off of Youtube for their favorite
-        "Virtual Youtubers" with filtering and sharing features. Additionally,
-        the clips are linked to their original sources if the translator
-        provided that information in the description of their clip. This
-        application was actively built on a daily basis for over 2 months and
-        has had periodic updates after that.
+        most recently translated video clips from Youtube for their favorite
+        "Virtual Youtubers" with filtering, searching, and sharing features.
+        Additionally, the clips are linked to their original sources if the
+        translator provided that information in the description of their clip.
+        This application was actively built on a daily basis for over 2 months
+        and has had periodic updates after that.
       </p>
       <p>Key details:</p>
       <ul>
@@ -57,16 +57,12 @@
         </li>
         <li>
           Created a RESTful API with Express.js to access information from the
-          Postgres database. There are several routes:
+          Postgres database with caching using Redis. There are several routes:
           <a href="https://api.vtuberclips.com/api/channels">channels</a>,
           <a href="https://api.vtuberclips.com/api/videos">videos</a>,
           <a href="https://api.vtuberclips.com/api/video-to-videos"
             >video-to-videos</a
           >
-        </li>
-        <li>
-          More expensive API requests as well as commonly requested data are
-          cached using Redis.
         </li>
         <li>
           A script is used daily with a cronjob to populate the database with
@@ -77,9 +73,55 @@
           API, and this portfolio website.
         </li>
         <li>
-          The entire full-stack is deployed on Linode using Docker Hub. The
-          repositories can be seen
-          <a href="https://hub.docker.com/u/michaelnguyenm">here</a>.
+          The entire full-stack is deployed on Linode using Docker. The
+          repositories can be seen on Docker Hub
+          <a href="https://hub.docker.com/u/michaelnguyenm">here</a> with the
+          vtube-stars name.
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <div class="col-md-12">
+      <h3>
+        Ray Akira Soundboard
+        <small
+          ><a href="https://rayakiranois.es/">Website</a>
+          |
+          <a href="https://github.com/michaelnguyenm/ray-noises-app"
+            >Github</a
+          ></small
+        >
+      </h3>
+      <h4>React.js(Typescript)/Docker</h4>
+      <p>
+        The goal for this app was to learn the basics of React.js with
+        Typescript and provide a fun app that plays spoken lines and sounds from
+        a Youtuber's videos. This app was successfully deployed to a few hundred
+        users on the first day.
+      </p>
+      <p>Key details:</p>
+      <ul>
+        <li>
+          Built with React.js (Typescript) and
+          <a href="https://material-ui.com/">Material-UI</a> for the front-end.
+          The interface is responsive across mobile and desktop devices.
+        </li>
+        <li>
+          A geolocation API is used to determine the user's locale and displays
+          a list of sounds in English/Japanese/Korean. This setting can be
+          configured and is saved to local storage.
+        </li>
+        <li>
+          The Docker image can be configured with different environment
+          variables at runtime such as a different API key for the geolocation
+          API or different location for the audio files.
+        </li>
+        <li>
+          The app is deployed on Linode using Docker. The repository can be seen
+          on Docker Hub
+          <a href="https://hub.docker.com/r/michaelnguyenm/ray-noises-app"
+            >here</a
+          >.
         </li>
       </ul>
     </div>
@@ -90,14 +132,10 @@
         <small
           ><a href="https://github.com/michaelnguyenm/seasonal-jpop-app"
             >Github</a
-          >
-          |
-          <a href="http://ec2-52-25-78-67.us-west-2.compute.amazonaws.com"
-            >Website</a
           ></small
         >
       </h3>
-      <h4>Typescript/MEAN stack</h4>
+      <h4>MEAN stack</h4>
       <p>
         The goal for this project was to provide a service for which people
         could easily find related music for their favorite shows in an automated
@@ -110,7 +148,9 @@
       </p>
       <p>Key details:</p>
       <ul>
-        <li>Built on top of a MEAN stack (Angular 4) and Bootstrap.</li>
+        <li>
+          Built on top of a MEAN stack (Angular 2+/Typescript) and Bootstrap.
+        </li>
         <li>
           Front-end displays release dates for albums and related links for a
           given television airing season.
