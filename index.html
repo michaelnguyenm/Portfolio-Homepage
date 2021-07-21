@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Michael Nguyen - Homepage</title>
-        <!-- Stylesheets (Bootstrap) -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
-        <!-- Angular, ui-router, js files -->
-        <script src="https://code.angularjs.org/1.6.0/angular.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
-        <script src="js/app.js"></script>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Michael Nguyen - Homepage</title>
+    <!-- Stylesheets (Bootstrap) -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <!-- Angular, ui-router, js files -->
+    <script src="https://code.angularjs.org/1.6.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
 
-        <base href="/">
-    </head>
-    <body ng-app="routerApp">
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-fixed-top navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" ui-sref="home">Michael Nguyen</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse pull-right">
-                    <ul class="nav navbar-nav">
-                        <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
-                        <li ui-sref-active="active"><a ui-sref="projects">Projects</a></li>
-                        <li ui-sref-active="active"><a ui-sref="contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Body -->
-        <div ui-view style="padding-top: 50px"></div>
-        <!-- Footer -->
-        <div class="container">
-            <hr>
-            <a href="https://www.getbootstrap.com/">Powered by Bootstrap</a> - Website created by Michael Nguyen
-            <br>
-            Social media icons
-            <a href="http://www.flaticon.com/packs/logotypes">designed by Pixel Buddha from Flaticon</a>
-            <br>
-            <br>
+    <base href="/" />
+  </head>
+  <body ng-app="routerApp">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ui-sref="home">Michael Nguyen</a>
         </div>
-        <!-- Scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+        <div id="navbar" class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+            <li ui-sref-active="active"><a ui-sref="projects">Projects</a></li>
+            <li ui-sref-active="active"><a ui-sref="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Body -->
+    <div ui-view style="padding-top: 50px"></div>
+    <!-- Footer -->
+    <div class="container">
+      <hr />
+      <a href="https://www.getbootstrap.com/">Powered by Bootstrap</a> - Website
+      created by Michael Nguyen
+      <br />
+      Social media icons
+      <a href="http://www.flaticon.com/packs/logotypes"
+        >designed by Pixel Buddha from Flaticon</a
+      >
+      <br />
+      <br />
+    </div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

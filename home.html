@@ -36,18 +36,24 @@
 <div class="container">
   <!-- Education -->
   <div class="row">
-    <h2>Education</h2>
-    <div class="col-md-4 col-sm-12">
+    <div class="col-xs-12">
+      <h2>Education</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
       <h3>University of Texas at Austin</h3>
     </div>
-    <div class="col-md-8 col-sm-12">
+    <div class="col-sm-8 col-xs-12">
       <h4>Bachelor of Science and Arts in Computer Science</h4>
       <p>Aug 2013 - Dec 2017</p>
     </div>
-    <div class="col-md-4 col-sm-12">
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
       <h3>Sophia University / 上智大学</h3>
     </div>
-    <div class="col-md-8 col-sm-12">
+    <div class="col-sm-8 col-xs-12">
       <h4>Minor in Japanese</h4>
       <p>Apr 2016 - Jul 2016</p>
       <p>Completed minor in Japanese while studying abroad.</p>
@@ -56,10 +62,64 @@
   <hr />
   <!-- Work Experience -->
   <div class="row">
-    <h2>Work Experience</h2>
-      <div class="col-md-4 col-sm-12">
-      <a href="https://www.hummingheads.co.jp/english/index.html"><h3>Humming Heads Inc. (Japan)</h3></a>
-      </div>
+    <div class="col-xs-12">
+      <h2>Work Experience</h2>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <a href="https://virtualityproject.moe/"
+        ><h3>Virtuality Project LLC</h3></a
+      >
+      <h3 style="margin-top: 0">
+        <small>Los Angeles, California (Remote)</small>
+      </h3>
+    </div>
+    <div class="col-md-8 col-sm-12">
+      <h4>Freelance Software Engineer <small>October 2020 - Present</small></h4>
+      <ul>
+        <li>
+          Enhanced Hauoli's motion tracking application for Android with network
+          discovery and automatic audio level control to ensure that the
+          application easily connects to the host computer and that the quality
+          of the tracking is maintained at all distances, removing potential
+          barriers for the end user.
+        </li>
+        <li>
+          Designed and implemented the interface to allow other Android
+          developers to easily access data from a background service which wraps
+          Hauoli's SDK. The service was built as a way to easily distribute the
+          SDK so that developers did not have to incorporate any C++ native code
+          and complicated build scripts and just focus on using the motion
+          tracking data.
+        </li>
+        <li>
+          Created tools from the ground up in Java Swing and Windows
+          Presentation Foundation to allow the user to test and debug Hauoli's
+          motion tracking technology with PC games. The tools communicate with
+          Hauoli's motion tracking application on Android/iOS.
+        </li>
+        <li>
+          Designed a gesture-based control scheme using the open source
+          <a href="http://depts.washington.edu/madlab/proj/dollar/index.html"
+            >$1 Unistroke Recognizer</a
+          >
+          and Hauoli's tracking data for a music player application that can be
+          implemented into smart speaker systems. Gesture control was also used
+          to control other IoT devices such as smart light bulbs.
+        </li>
+        <li>
+          Developed a Unity SDK for developers to use audio-based motion
+          tracking data from Android and iOS devices, and created several tech
+          demos which were presented at Consumer Electronics Show 2018 and
+          several investor meetings.
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <a href="https://www.hummingheads.co.jp/english/index.html"
+        ><h3>Humming Heads Inc.</h3></a
+      >
+      <h3 style="margin-top: 0"><small>Tokyo, Japan</small></h3>
+    </div>
     <div class="col-md-8 col-sm-12">
       <h4>Software Engineer <small>Feb 2020 - Jul 2020</small></h4>
       <ul>
@@ -75,118 +135,83 @@
         </li>
       </ul>
     </div>
-      <div class="col-md-4 col-sm-12">
-        <a href="https://hauoli.co/"><h3>Hauoli LLC</h3></a>
-      </div>
-      <div class="col-md-8 col-sm-12">
-        <h4>Software Engineer <small>Aug 2017 - May 2019</small></h4>
-        <ul>
-          <li>
-            Enhanced Hauoli's motion tracking application for Android with
-            network discovery and automatic audio level control to ensure that
-            the application easily connects to the host computer and that the
-            quality of the tracking is maintained at all distances, removing
-            potential barriers for the end user.
-          </li>
-          <li>
-            Designed and implemented the interface to allow other Android
-            developers to easily access data from a background service which
-            wraps Hauoli's SDK. The service was built as a way to easily
-            distribute the SDK so that developers did not have to incorporate
-            any C++ native code and complicated build scripts and just focus on
-            using the motion tracking data.
-          </li>
-          <li>
-            Created tools from the ground up in Java Swing and Windows
-            Presentation Foundation to allow the user to test and debug Hauoli's
-            motion tracking technology with PC games. The tools communicate with
-            Hauoli's motion tracking application on Android/iOS.
-          </li>
-          <li>
-            Designed a gesture-based control scheme using the open source
-            <a href="http://depts.washington.edu/madlab/proj/dollar/index.html"
-              >$1 Unistroke Recognizer</a
-            >
-            and Hauoli's tracking data for a music player application that can
-            be implemented into smart speaker systems. Gesture control was also
-            used to control other IoT devices such as smart light bulbs.
-          </li>
-          <li>
-            Developed a Unity SDK for developers to use audio-based motion
-            tracking data from Android and iOS devices, and created several tech
-            demos which were presented at Consumer Electronics Show 2018 and
-            several investor meetings.
-          </li>
-        </ul>
-      </div>
+    <div class="col-md-4 col-sm-12">
+      <a href="https://hauoli.co/"><h3>Hauoli LLC</h3></a>
+      <h3 style="margin-top: 0"><small>Austin, Texas</small></h3>
     </div>
-    <hr />
-    <!-- Coursework -->
-    <!--
-    <div class="row">
-        <h2>Coursework</h2>
-        <div class="col-md-4">
-            <h3>Data Structures</h3>
-            <p>Implemented data structures such as linked list, set, binary search tree, and priority queue which was used in a Huffman coding assignment to compress a file in Java.</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Object Oriented Programming</h3>
-            <p>Created a basic algorithm which parses Netflix anonymized data and makes recommendations and also implemented a memory allocator in C++. Used tools such as Github, Travis-CI, Docker, and Google Test.</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Operating Systems</h3>
-            <p>Developed a mini shell which forks, executes, and reaps foreground and background child processes in C. Added process, virtual memory, and file system abstractions on top of preexisting toy OS code during the semester.</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Mobile Computing</h3>
-            <p>Application development for Android in Java. Developed a puzzle game with a team of two other people over the course of ten weeks.</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Software Design</h3>
-            <p>Applied design concepts through the use of UML models. Created refactoring scripts and common design patterns such as the visitor pattern.</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Big Data Programming</h3>
-            <p>Used tools such as Hadoop and Spark with Java to organize data into partitions or bins and filter data during the semester. Computed statistics such as mean and standard deviation on provided datasets.</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Introduction to Computer Security</h3>
-            <p>Encoded and decoded messages into images at a bit level, created a password cracker based on common substitutions and transformations, and implemented AES-128 in Java.</p>
-        </div>
+    <div class="col-md-8 col-sm-12">
+      <h4>Software Engineer <small>Aug 2017 - May 2019</small></h4>
+      <ul>
+        <li>
+          Enhanced Hauoli's motion tracking application for Android with network
+          discovery and automatic audio level control to ensure that the
+          application easily connects to the host computer and that the quality
+          of the tracking is maintained at all distances, removing potential
+          barriers for the end user.
+        </li>
+        <li>
+          Designed and implemented the interface to allow other Android
+          developers to easily access data from a background service which wraps
+          Hauoli's SDK. The service was built as a way to easily distribute the
+          SDK so that developers did not have to incorporate any C++ native code
+          and complicated build scripts and just focus on using the motion
+          tracking data.
+        </li>
+        <li>
+          Created tools from the ground up in Java Swing and Windows
+          Presentation Foundation to allow the user to test and debug Hauoli's
+          motion tracking technology with PC games. The tools communicate with
+          Hauoli's motion tracking application on Android/iOS.
+        </li>
+        <li>
+          Designed a gesture-based control scheme using the open source
+          <a href="http://depts.washington.edu/madlab/proj/dollar/index.html"
+            >$1 Unistroke Recognizer</a
+          >
+          and Hauoli's tracking data for a music player application that can be
+          implemented into smart speaker systems. Gesture control was also used
+          to control other IoT devices such as smart light bulbs.
+        </li>
+        <li>
+          Developed a Unity SDK for developers to use audio-based motion
+          tracking data from Android and iOS devices, and created several tech
+          demos which were presented at Consumer Electronics Show 2018 and
+          several investor meetings.
+        </li>
+      </ul>
     </div>
-    <hr>
-    -->
-    <!-- Tools -->
-    <div class="row">
+  </div>
+  <hr />
+  <!-- Tools -->
+  <div class="row">
+    <div class="col-xs-12">
       <h2>Skills</h2>
-      <div class="col-md-6">
-        <h3>Programming</h3>
-        <ul>
-          <li>Java (Android/Spring)</li>
-          <li>C</li>
-          <li>C++</li>
-          <li>C# (Unity/WPF)</li>
-          <li>Python</li>
-          <li>Javascript (React.js)</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <h3>Tools</h3>
-        <ul>
-          <li>Git</li>
-          <li>Android Studio</li>
-          <li>Unity</li>
-          <li>Travis-CI</li>
-          <li>Docker</li>
-        </ul>
-        <h3>Testing Frameworks</h3>
-        <ul>
-          <li>UnitTest Python</li>
-          <li>Google Test</li>
-        </ul>
-      </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h3>Programming</h3>
+      <ul>
+        <li>Javascript/Typescript (React.js+Next.js+PWAs)</li>
+        <li>Java (Android)</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>C# (Unity/WPF)</li>
+        <li>Python</li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h3>Tools</h3>
+      <ul>
+        <li>Git</li>
+        <li>Android Studio</li>
+        <li>Unity</li>
+        <li>Travis-CI</li>
+        <li>Docker</li>
+      </ul>
+      <h3>Testing Frameworks</h3>
+      <ul>
+        <li>UnitTest Python</li>
+        <li>Google Test</li>
+      </ul>
     </div>
   </div>
 </div>
