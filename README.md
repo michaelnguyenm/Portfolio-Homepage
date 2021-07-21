@@ -29,3 +29,9 @@ This process is a lot more simple if you use Docker Compose, which will pull the
 ```
 docker-compose up -d
 ```
+
+A development server running on 127.0.0.1:1441 can be run using:
+
+```
+docker-compose -f docker-compose.dev.yml up -d
+```
