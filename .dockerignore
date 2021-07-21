@@ -3,3 +3,4 @@
 .vscode
 README.md
 docker-compose.yml
+docker-compose.dev.yml

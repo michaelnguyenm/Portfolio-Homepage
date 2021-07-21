@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  portfolio-home-dev:
+    container_name: portfolio-home-dev
+    image: nginx:stable-alpine
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:1441:80
+    volumes:
+      - .:/usr/share/nginx/html
+      # - ./nginx:/etc/nginx/templates
