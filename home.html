@@ -6,20 +6,27 @@
       <h2>Michael Nguyen</h2>
       <div class="col-md-3 col-sm-1"></div>
       <div class="col-md-6 col-sm-10">
-        I am a software engineer with experience building native Android
-        applications and services as well as desktop applications using Java
-        Swing and Windows Presentation Foundation at a small startup comprised
-        of four people. As such, I am often given the creative liberty to choose
-        the best tools for the job and learn how to use them in short periods of
-        time to meet deadlines. I am hoping to bring this experience and
-        flexibility to a larger company with larger customer-facing applications
-        and eventually grow to become a mentor for other engineers.
+        I'm a software engineer with experience building web applications in
+        React.js and native Android applications. I also have prior experience
+        building tools with Windows Presentation Foundation which interface over
+        the network with Android applications for debugging. As my prior
+        experience has been at a smaller company, I had often been given the
+        liberty to choose the best tools for the job and learn how to use them
+        in short periods of time to meet deadlines. I am hoping to bring this
+        experience and flexibility to a larger company with larger
+        customer-facing applications and eventually grow to become a mentor for
+        other engineers.
       </div>
       <div class="col-md-3 col-sm-1"></div>
       <!-- Github, Linkedin, Wordpress, Flickr -->
       <div class="col-md-12">
         <a href="https://github.com/michaelnguyenm/"
           ><img class="img-social" src="img/github.png"
+        /></a>
+        <a href="https://gitlab.com/michaelnguyen/"
+          ><img
+            class="img-social"
+            src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-128.png"
         /></a>
         <a href="https://www.linkedin.com/in/michael-nguyen-718201b6"
           ><img class="img-social" src="img/linkedin.png"
@@ -66,57 +73,65 @@
       <h2>Work Experience</h2>
     </div>
     <div class="col-md-4 col-sm-12">
-      <a href="https://virtualityproject.moe/"
-        ><h3>Virtuality Project LLC</h3></a
-      >
+      <a href="https://virtualityproject.moe/"><h3>Virtuality Project</h3></a>
       <h3 style="margin-top: 0">
         <small>Los Angeles, California (Remote)</small>
       </h3>
     </div>
     <div class="col-md-8 col-sm-12">
-      <h4>Freelance Software Engineer <small>October 2020 - Present</small></h4>
+      <h4>
+        Freelance Software Engineer
+        <small>October 2020 - Present</small>
+      </h4>
       <ul>
         <li>
-          Enhanced Hauoli's motion tracking application for Android with network
-          discovery and automatic audio level control to ensure that the
-          application easily connects to the host computer and that the quality
-          of the tracking is maintained at all distances, removing potential
-          barriers for the end user.
+          Manage all technical aspects of Virtuality Project LLC, a talent
+          agency that assists livestreamers in producing anime-centric video
+          content, merchandising, and building communities.
         </li>
         <li>
-          Designed and implemented the interface to allow other Android
-          developers to easily access data from a background service which wraps
-          Hauoli's SDK. The service was built as a way to easily distribute the
-          SDK so that developers did not have to incorporate any C++ native code
-          and complicated build scripts and just focus on using the motion
-          tracking data.
+          Built a progressive web application with React.js and Typescript which
+          delivers scheduling information from Twitter, livestreams that are in
+          progress on Twitch and YouTube, and indexes old videos for easy lookup
+          for the fans. The web application leverages server-side rendering with
+          Next.js for fast loading times and is deployed using Docker.
         </li>
         <li>
-          Created tools from the ground up in Java Swing and Windows
-          Presentation Foundation to allow the user to test and debug Hauoli's
-          motion tracking technology with PC games. The tools communicate with
-          Hauoli's motion tracking application on Android/iOS.
+          Designed a landing page which features the talents under the agency,
+          uses incremental static regeneration with Next.js to produce a
+          webpages which display livestream embeds from Twitch and YouTube when
+          talents are live, and integrates a webstore for merchandise.
         </li>
         <li>
-          Designed a gesture-based control scheme using the open source
-          <a href="http://depts.washington.edu/madlab/proj/dollar/index.html"
-            >$1 Unistroke Recognizer</a
-          >
-          and Hauoli's tracking data for a music player application that can be
-          implemented into smart speaker systems. Gesture control was also used
-          to control other IoT devices such as smart light bulbs.
+          Built a YouTube chatbot which spawns additional instances when the
+          server's webhook recieves a notification that a talent has started
+          streaming. This solution is built around Node.js events in Typescript
+          and is a simple moderation bot which prevents spam and is in the
+          process of being expanded to allow chatrooms to interact with the
+          talents while streaming.
         </li>
         <li>
-          Developed a Unity SDK for developers to use audio-based motion
-          tracking data from Android and iOS devices, and created several tech
-          demos which were presented at Consumer Electronics Show 2018 and
-          several investor meetings.
+          Created commands in Python for a Discord chat bot so that managers and
+          talents can easily update the website, community chatrooms, and social
+          media all at the same time.
+        </li>
+        <li>
+          Manage automation with the workflow platform, n8n, while creating
+          custom solutions in Javascript to track talent activities on Twitch
+          and YouTube. This information is served in real-time to fans on social
+          media, the website, our community chatrooms, and even notifies our
+          chatbot of new streams for moderation.
+        </li>
+        <li>
+          Designed a simple schema for relating talent information, their social
+          media, and video content which can be accessed through an API that is
+          used by the PWA, website, and chatbots.
         </li>
       </ul>
     </div>
     <div class="col-md-4 col-sm-12">
       <a href="https://www.hummingheads.co.jp/english/index.html"
-        ><h3>Humming Heads Inc.</h3></a
+        ><h3>Humming Heads</h3></a
       >
       <h3 style="margin-top: 0"><small>Tokyo, Japan</small></h3>
     </div>
@@ -136,7 +151,7 @@
       </ul>
     </div>
     <div class="col-md-4 col-sm-12">
-      <a href="https://hauoli.co/"><h3>Hauoli LLC</h3></a>
+      <a href="https://hauoli.co/"><h3>Hauoli</h3></a>
       <h3 style="margin-top: 0"><small>Austin, Texas</small></h3>
     </div>
     <div class="col-md-8 col-sm-12">
@@ -192,25 +207,20 @@
       <ul>
         <li>Javascript/Typescript (React.js+Next.js+PWAs)</li>
         <li>Java (Android)</li>
+        <li>Python 3</li>
+        <li>C# (Unity/WPF)</li>
         <li>C</li>
         <li>C++</li>
-        <li>C# (Unity/WPF)</li>
-        <li>Python</li>
       </ul>
     </div>
     <div class="col-xs-12 col-md-6">
       <h3>Tools</h3>
       <ul>
         <li>Git</li>
+        <li>Docker</li>
+        <li>Travis-CI</li>
         <li>Android Studio</li>
         <li>Unity</li>
-        <li>Travis-CI</li>
-        <li>Docker</li>
-      </ul>
-      <h3>Testing Frameworks</h3>
-      <ul>
-        <li>UnitTest Python</li>
-        <li>Google Test</li>
       </ul>
     </div>
   </div>
