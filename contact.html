@@ -1,10 +1,20 @@
 <div class="container">
-    <div class="row">
-        <h1>Contact Information</h1>
-        <!-- Obfuscation CSS based on http://ch.tilllate.com/061101_emailtest.php -->
-        <style type="text/css">span.cd { unicode-bidi: bidi-override; direction: rtl; }</style>
-        <p>I can be reached at:
-        <span class="cd"><a href="mailto: {{ mr }}" class ="cd">{{ host }}{{ at }}{{ user }}</a></span>
-        </p>
-    </div>
+  <div class="row">
+    <h1>Contact Information</h1>
+    <!-- Obfuscation CSS based on http://ch.tilllate.com/061101_emailtest.php -->
+    <style type="text/css">
+      span.cd {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+      }
+    </style>
+    <p>
+      I can be reached at:
+      <span class="cd"
+        ><a href="mailto: {{ mr }}" class="cd"
+          >{{ host }}{{ at }}{{ user }}</a
+        ></span
+      >
+    </p>
+  </div>
 </div>
