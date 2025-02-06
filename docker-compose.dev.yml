@@ -1,5 +1,3 @@
-version: "3.7"
-
 services:
   portfolio-home-dev:
     container_name: portfolio-home-dev
